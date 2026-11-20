@@ -5,8 +5,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = "https://policy.anlutimall.shop/"
-EMAIL = "congdinh.dev@gmail.com"
-FORBIDDEN = ["TODO", "lorem", "Lorem", "placeholder", "{{", "example.com", "Cloudinary", "Supabase"]
+EMAIL = "support@anlutimall.shop"
+FORBIDDEN = ["congdinh.dev@gmail.com", "TODO", "lorem", "Lorem", "placeholder", "{{", "example.com", "Cloudinary", "Supabase"]
 
 # path -> (lang, canonical path, counterpart path)
 PAGES = {
@@ -110,8 +110,8 @@ def main():
                 errors.append(f"{rel}: missing hreflang {hl} -> {url}")
         if not any(r == "stylesheet" for r, _, _ in rels):
             errors.append(f"{rel}: no stylesheet")
-        if EMAIL not in text:
-            errors.append(f"{rel}: contact email missing")
+        if text.count("mailto:" + EMAIL) != 1:
+            errors.append(f"{rel}: contact email must appear exactly once, found {text.count('mailto:' + EMAIL)}")
         if "2026-11-20" not in text:
             errors.append(f"{rel}: effective date 2026-11-20 missing")
         if not p.section_ids:

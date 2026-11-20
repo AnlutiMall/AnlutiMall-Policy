@@ -42,7 +42,7 @@ authorized domain `anlutimall.shop`). Start simple, improve over time.
   storage. No advertising or analytics trackers.
 - Users cannot delete their own account in the app; deletion is done by the shop
   on request.
-- Contact: `congdinh.dev@gmail.com` (owner-provided).
+- Contact: `support@anlutimall.shop` (owner-provided).
 
 ## Approaches considered
 

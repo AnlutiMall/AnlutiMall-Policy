@@ -14,7 +14,7 @@
 
 - Files: `index.html`, `404.html`, `privacy/index.html`, `terms/index.html`, `en/privacy/index.html`, `en/terms/index.html`, `assets/style.css`, `assets/favicon.svg`.
 - All internal links relative (`../terms/`, `../../privacy/`), never root-absolute.
-- Contact email everywhere: `congdinh.dev@gmail.com`. Brand: `Anluti Mall`. No legal entity, address, phone, tax ID.
+- Contact email everywhere: `support@anlutimall.shop`. Brand: `Anluti Mall`. No legal entity, address, phone, tax ID.
 - Effective date: VI `20/11/2026`, EN `20 November 2026`, plus `<time datetime="2026-11-20">`.
 - Retention: account data kept while the account is active; deleted within 30 days of an emailed request.
 - Third parties named exactly: Google (sign-in), Cloudflare R2 (image storage), Resend (email). Never name Cloudinary or Supabase.
